@@ -11,8 +11,7 @@ import com.jarcidco.mudapp.R
 
 class LoginActivity : AppCompatActivity() {
 
-    lateinit var buttonLogin: Button
-    lateinit var forgot_password:TextView
+
 
     companion object{
 
@@ -26,12 +25,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-
-        forgot_password = findViewById(R.id.forgot_password)
-        buttonLogin = findViewById(R.id.buttonLogin)
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-    }
+
 }
