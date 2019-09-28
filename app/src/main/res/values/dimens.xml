@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_margin_top">108dp</dimen>
+    <dimen name="common_activity_margin">30dp</dimen>
+    <dimen name="common_margin_top_buttons">10dp</dimen>
+</resources>

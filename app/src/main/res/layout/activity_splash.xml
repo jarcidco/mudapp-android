@@ -6,4 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".ui.splash.SplashActivity">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mudanza_splash_screen" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/logo_margin_top"
+        android:src="@drawable/logo_mudapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/common_activity_margin"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/need_move_button"
+            style="@style/PrimaryButtonOrange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/need_moving" />
+
+        <TextView
+            android:id="@+id/i_am_transporter_button"
+            style="@style/SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_top_buttons"
+            android:text="@string/i_am_transporter" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
