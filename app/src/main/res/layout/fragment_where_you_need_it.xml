@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.house_moving.fragment.WhereYouNeedItFragment">
+
+    <TextView
+        android:id="@+id/where_you_need_text_view"
+        style="@style/HugeTextTitle.Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/where_you_need_your_moving"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_activity_margin"
+        android:layout_weight="6"
+        app:cameraTargetLat="4.624335"
+        app:cameraTargetLng="-74.063644"
+        app:cameraTilt="30"
+        app:cameraZoom="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/where_you_need_text_view"
+        tools:context="com.example.andresvelasquez.domiciliostest.activities.stops.view.MapsActivity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
