@@ -26,3 +26,11 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+ext {
+    daggerVersion = '2.24'
+    retrofitVersion = '2.6.0'
+    loggingHttpInterceptorVersion = '3.13.0'
+    timberVersion = '4.5.1'
+    coroutinesVersion = '1.1.1'
+    advancedRecyclerViewVersion = '1.0.0'
+}
