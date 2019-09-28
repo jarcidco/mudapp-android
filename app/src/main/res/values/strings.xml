@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Mudapp</string>
-    <string name="quiero_mudarme">Quiero mudarme</string>
+    <string name="need_moving">Necesito mudarme</string>
+    <string name="i_am_transporter">Soy transportador</string>
 </resources>
