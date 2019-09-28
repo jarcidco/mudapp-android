@@ -2,6 +2,7 @@ package com.jarcidco.mudapp.ui.login.fragment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.jarcidco.mudapp.R
 
 class LoginUser : AppCompatActivity() {
 

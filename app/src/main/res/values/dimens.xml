@@ -3,4 +3,5 @@
     <dimen name="logo_margin_top">108dp</dimen>
     <dimen name="common_activity_margin">30dp</dimen>
     <dimen name="common_margin_top_buttons">10dp</dimen>
+    <dimen name="huge_title_text">24sp</dimen>
 </resources>

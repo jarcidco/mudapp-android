@@ -7,12 +7,11 @@
     tools:context=".ui.login.fragment.LoginUser">
 
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quiero_mudarme"
+        android:text="@string/need_moving"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,11 +21,11 @@
         android:id="@+id/imageButton"
         android:layout_width="191dp"
         android:layout_height="158dp"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_person"
-        tools:layout_editor_absoluteY="126dp"
-        android:contentDescription="TODO" />
+        tools:layout_editor_absoluteY="126dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

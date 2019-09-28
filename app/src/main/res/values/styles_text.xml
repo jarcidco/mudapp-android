@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HugeTextTitle">
+        <item name="android:textSize">@dimen/huge_title_text</item>
+    </style>
+
+    <style name="HugeTextTitle.Black" parent="HugeTextTitle">
+        <item name="android:textColor">@color/icons</item>
+    </style>
+</resources>
