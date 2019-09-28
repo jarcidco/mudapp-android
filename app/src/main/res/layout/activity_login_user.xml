@@ -7,25 +7,73 @@
     tools:context=".ui.login.fragment.LoginUser">
 
 
-    <TextView
-        android:id="@+id/textView"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/need_moving"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="312dp" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="224dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="191dp"
-        android:layout_height="158dp"
-        android:contentDescription="TODO"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mudanza_splash_screen"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:drawableLeft="@drawable/ic_person"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        android:text="@string/User"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_person"
-        tools:layout_editor_absoluteY="126dp" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:targetApi="o" />
+
+    <EditText
+
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_vpn_key"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        style="@style/PrimaryButtonOrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        style="@style/SecondaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_top_buttons"
+        android:text="@string/forgot_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

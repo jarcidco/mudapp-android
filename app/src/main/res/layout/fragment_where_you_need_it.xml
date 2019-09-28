@@ -20,17 +20,29 @@
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="@dimen/common_activity_margin"
+        android:layout_marginBottom="@dimen/common_activity_margin"
         android:layout_weight="6"
         app:cameraTargetLat="4.624335"
         app:cameraTargetLng="-74.063644"
         app:cameraTilt="30"
         app:cameraZoom="2"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/where_you_need_text_view"
         tools:context="com.example.andresvelasquez.domiciliostest.activities.stops.view.MapsActivity" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/PrimaryButtonOrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_margin_top_buttons"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

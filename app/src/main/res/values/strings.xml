@@ -2,6 +2,8 @@
     <string name="app_name">Mudapp</string>
     <string name="need_moving">Necesito mudarme</string>
     <string name="i_am_transporter">Soy transportador</string>
+    <string name="User">Usuario</string>
+    <string name="forgot_password">Olvidé mi contraseña</string>
     <string name="login">Ingresar</string>
 
     <!-- TODO: Remove or change this placeholder text -->
