@@ -22,6 +22,7 @@ class HouseMovingActivity : AppCompatActivity() {
     }
 
     private fun startWhereYouNeedItFragment() {
+        actionBar.setTitle("Crea tu mudanza")
         val whereYouNeedItFragment = WhereYouNeedItFragment()
         val fragmentManager = supportFragmentManager
         val transaction = fragmentManager.beginTransaction()

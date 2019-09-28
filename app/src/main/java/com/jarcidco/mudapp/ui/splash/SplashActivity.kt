@@ -23,9 +23,6 @@ class SplashActivity : AppCompatActivity() {
 
         needMovingButton.setOnClickListener({
             startActivity(LoginActivity.getIntent(this))})
-        needMovingButton.setOnClickListener {
-            startActivity(HouseMovingActivity.getIntent(this))
-        }
 
         iAmTransporter.setOnClickListener({
             //TODO: Go to login Activity with transporter param}
