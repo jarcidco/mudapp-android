@@ -1,7 +1,8 @@
-package com.jarcidco.mudapp
+package com.jarcidco.mudapp.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.jarcidco.mudapp.R
 
 class MainActivity : AppCompatActivity() {
 
