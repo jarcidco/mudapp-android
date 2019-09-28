@@ -1,10 +1,12 @@
 package com.jarcidco.mudapp.ui.splash
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.jarcidco.mudapp.R
+import com.jarcidco.mudapp.ui.login.LoginActivity
 import com.jarcidco.mudapp.ui.house_moving.HouseMovingActivity
 
 class SplashActivity : AppCompatActivity() {
@@ -19,6 +21,8 @@ class SplashActivity : AppCompatActivity() {
         needMovingButton = findViewById(R.id.need_move_button)
         iAmTransporter = findViewById(R.id.i_am_transporter_button)
 
+        needMovingButton.setOnClickListener({
+            startActivity(LoginActivity.getIntent(this))})
         needMovingButton.setOnClickListener {
             startActivity(HouseMovingActivity.getIntent(this))
         }
