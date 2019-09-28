@@ -8,21 +8,31 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:drawableLeft="@drawable/ic_person"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_vpn_key"
         tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="207dp" />
+        tools:layout_editor_absoluteY="205dp" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:drawableLeft="@drawable/ic_person"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="Usuario"
+        android:hint="Usuario"
         tools:layout_editor_absoluteX="66dp"
         tools:layout_editor_absoluteY="150dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="257dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

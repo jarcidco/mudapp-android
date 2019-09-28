@@ -1,14 +1,17 @@
 package com.jarcidco.mudapp.ui.splash
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.jarcidco.mudapp.R
+import com.jarcidco.mudapp.ui.login.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
 
     lateinit var needMovingButton: Button
-    lateinit var iAmTransporter: Button
+    lateinit var iAmTransporter: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,8 +21,7 @@ class SplashActivity : AppCompatActivity() {
         iAmTransporter = findViewById(R.id.i_am_transporter_button)
 
         needMovingButton.setOnClickListener({
-            //TODO: Go to login Activity with user param
-        })
+            startActivity(LoginActivity.getIntent(this))})
 
         iAmTransporter.setOnClickListener({
             //TODO: Go to login Activity with transporter param}

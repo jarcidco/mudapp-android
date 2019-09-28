@@ -7,26 +7,43 @@
     tools:context=".ui.login.fragment.LoginUser">
 
 
+    <EditText
 
-    <TextView
-        android:id="@+id/textView"
+        android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quiero_mudarme"
+        android:drawableLeft="@drawable/ic_vpn_key"
+        android:ems="10"
+        android:layout_marginTop="@dimen/common_margin_top_buttons"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="312dp" />
+        app:layout_constraintTop_toBottomOf="@+id/user" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="191dp"
-        android:layout_height="158dp"
+
+    <Button
+        android:id="@+id/buttonLogin"
+        style="@style/PrimaryButtonOrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_person"
-        tools:layout_editor_absoluteY="126dp"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SecondaryButton"
+        android:layout_marginTop="@dimen/common_margin_top_buttons"
+        android:text="Olvidé mi contraseña"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
